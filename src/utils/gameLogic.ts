@@ -70,7 +70,7 @@ export function playCard(gameState: GameState, cardId: string): GameState {
   newState.playedCards = [...gameState.playedCards, card];
   
   // Calculate points
-  let points = calculateCardPoints(card, newState);
+  const points = calculateCardPoints(card, newState);
   newState.cw3Points += points;
   
   // Apply special effects
