@@ -43,7 +43,7 @@ export const ArchetypeSelection: React.FC<ArchetypeSelectionProps> = ({
           marginBottom: '15px',
           textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'
         }}>
-          Choose Your Criminal Archetype
+          Elige Tu Arquetipo Criminal
         </h1>
         <p style={{ 
           fontSize: '18px', 
@@ -52,8 +52,8 @@ export const ArchetypeSelection: React.FC<ArchetypeSelectionProps> = ({
           margin: '0 auto',
           lineHeight: '1.5'
         }}>
-          Each archetype has unique starting cards and specializes in different strategies. 
-          Choose wisely - your path to crypto dominance depends on it!
+          Cada arquetipo tiene cartas iniciales únicas y se especializa en diferentes estrategias. 
+          ¡Elige sabiamente - tu camino hacia la dominación cripto depende de ello!
         </p>
       </div>
 
@@ -129,7 +129,7 @@ export const ArchetypeSelection: React.FC<ArchetypeSelectionProps> = ({
                 textTransform: 'uppercase',
                 letterSpacing: '1px'
               }}>
-                Special Effect
+                Efecto Especial
               </h4>
               <p style={{ 
                 fontSize: '13px', 
@@ -147,8 +147,8 @@ export const ArchetypeSelection: React.FC<ArchetypeSelectionProps> = ({
               fontSize: '14px',
               color: 'rgba(255, 255, 255, 0.8)'
             }}>
-              <span>Starting CRYMP: ${archetype.startingCrymp}</span>
-              <span>Deck Size: {archetype.startingDeck.length} cards</span>
+              <span>CRYMP Inicial: ${archetype.startingCrymp}</span>
+              <span>Tamaño del Mazo: {archetype.startingDeck.length} cartas</span>
             </div>
             
             <div style={{
@@ -164,7 +164,7 @@ export const ArchetypeSelection: React.FC<ArchetypeSelectionProps> = ({
               textTransform: 'uppercase',
               letterSpacing: '1px'
             }}>
-              Click to Select
+              Haz Clic para Seleccionar
             </div>
           </div>
         ))}
@@ -179,12 +179,12 @@ export const ArchetypeSelection: React.FC<ArchetypeSelectionProps> = ({
         maxWidth: '800px',
         margin: '50px auto 0'
       }}>
-        <h3 style={{ color: '#ffd700', marginBottom: '15px' }}>🎯 Game Objective</h3>
+        <h3 style={{ color: '#ffd700', marginBottom: '15px' }}>🎯 Objetivo del Juego</h3>
         <p style={{ opacity: 0.9, lineHeight: '1.6' }}>
-          Build your crypto empire by playing cards strategically to earn <strong>CW3 points</strong>. 
-          Progress through rounds (Small Blind → Big Blind → Boss) by reaching target scores. 
-          Use <strong>CRYMP currency</strong> to buy new cards and upgrade your deck between rounds. 
-          Master the synergies between different card types to maximize your profits!
+          Construye tu imperio cripto jugando cartas estratégicamente para ganar <strong>puntos CW3</strong>. 
+          Progresa a través de rondas (Blind Pequeño → Blind Grande → Jefe) alcanzando puntajes objetivo. 
+          Usa <strong>moneda CRYMP</strong> para comprar nuevas cartas y mejorar tu mazo entre rondas. 
+          ¡Domina las sinergias entre diferentes tipos de cartas para maximizar tus ganancias!
         </p>
       </div>
     </div>

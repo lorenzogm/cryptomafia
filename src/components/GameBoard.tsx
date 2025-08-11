@@ -39,7 +39,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   useEffect(() => {
     if (checkRoundComplete(gameState) && gamePhase === 'playing') {
       setGamePhase('round_complete');
-      setMessage(`Round completed! You earned ${gameState.cw3Points} CW3 points!`);
+      setMessage(`¡Ronda completada! ¡Ganaste ${gameState.cw3Points} puntos CW3!`);
       setMessageType('success');
     }
   }, [gameState.cw3Points, gameState.targetPoints, gamePhase]);
@@ -53,27 +53,27 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   const handlePlayCard = (card: CardType) => {
     const newState = playCard(gameState, card.id);
     setGameState(newState);
-    showMessage(`Played ${card.name} for ${card.basePoints} CW3!`);
+    showMessage(`Jugaste ${card.name} por ${card.basePoints} CW3!`);
   };
 
   const handleDiscardCard = (card: CardType) => {
     const newState = discardCard(gameState, card.id);
     setGameState(newState);
-    showMessage(`Discarded ${card.name}`, 'warning');
+    showMessage(`Descartaste ${card.name}`, 'warning');
   };
 
   const handleEndTurn = () => {
     let newState = endTurn(gameState);
     newState = resetDeckFromDiscard(newState);
     setGameState(newState);
-    showMessage('Turn ended. New cards drawn.');
+    showMessage('Turno terminado. Nuevas cartas robadas.');
   };
 
   const handleAdvanceRound = () => {
     const newState = advanceRound(gameState);
     setGameState(newState);
     setGamePhase('shop');
-    showMessage('Advancing to shop phase!');
+    showMessage('¡Avanzando a la fase de tienda!');
   };
 
   const handleReturnToPlay = () => {
@@ -90,19 +90,19 @@ export const GameBoard: React.FC<GameBoardProps> = ({
       newState.crympMoney -= card.cost;
       newState.deck.push({ ...card });
       setGameState(newState);
-      showMessage(`Bought ${card.name} for $${card.cost} CRYMP!`);
+      showMessage(`Compraste ${card.name} por $${card.cost} CRYMP!`);
       return true;
     } else {
-      showMessage(`Not enough CRYMP! Need $${card.cost}`, 'error');
+      showMessage(`¡No hay suficiente CRYMP! Necesitas $${card.cost}`, 'error');
       return false;
     }
   };
 
   const formatRoundName = (round: string) => {
     switch (round) {
-      case 'small_blind': return 'Small Blind';
-      case 'big_blind': return 'Big Blind';
-      case 'boss': return 'Boss Round';
+      case 'small_blind': return 'Blind Pequeño';
+      case 'big_blind': return 'Blind Grande';
+      case 'boss': return 'Ronda Jefe';
       default: return round;
     }
   };
@@ -134,7 +134,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         <div className="game-stats">
           <div className="stat">
             <span className="stat-value cw3-points">{gameState.cw3Points}</span>
-            <span className="stat-label">CW3 Points</span>
+            <span className="stat-label">Puntos CW3</span>
           </div>
           
           <div className="stat">
@@ -150,7 +150,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               {formatRoundName(gameState.currentRound)}
             </div>
             <div className="round-progress">
-              Round {gameState.roundNumber} | Target: {gameState.targetPoints} CW3
+              Ronda {gameState.roundNumber} | Objetivo: {gameState.targetPoints} CW3
             </div>
           </div>
         </div>
@@ -165,7 +165,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
       <div className="game-board">
         <div className="play-area">
           <div className="played-cards-area">
-            <h3>Played Cards</h3>
+            <h3>Cartas Jugadas</h3>
             <div className={`played-cards ${gameState.playedCards.length === 0 ? 'empty' : ''}`}>
               {gameState.playedCards.map((card, index) => (
                 <Card key={`${card.id}-${index}`} card={card} />
@@ -176,11 +176,11 @@ export const GameBoard: React.FC<GameBoardProps> = ({
 
         <div className="hand-area">
           <div className="deck-info">
-            <div className="deck-count">Deck: {gameState.deck.length} cards</div>
-            <div className="deck-count">Discard: {gameState.discardPile.length} cards</div>
+            <div className="deck-count">Mazo: {gameState.deck.length} cartas</div>
+            <div className="deck-count">Descarte: {gameState.discardPile.length} cartas</div>
           </div>
           
-          <h3>Your Hand</h3>
+          <h3>Tu Mano</h3>
           <div className="hand">
             {gameState.hand.map((card, index) => (
               <Card 
@@ -199,7 +199,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           onClick={handleEndTurn}
           disabled={gameState.deck.length === 0 && gameState.discardPile.length === 0}
         >
-          End Turn
+          Terminar Turno
         </button>
         
         {gamePhase === 'round_complete' && (
@@ -207,7 +207,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
             className="btn btn-success" 
             onClick={handleAdvanceRound}
           >
-            Advance Round
+            Avanzar Ronda
           </button>
         )}
         
@@ -215,7 +215,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           className="btn btn-info" 
           onClick={() => setGamePhase('shop')}
         >
-          Visit Shop
+          Visitar Tienda
         </button>
         
         {gameState.hand.length > 0 && (
@@ -227,7 +227,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
               }
             }}
           >
-            Discard Card
+            Descartar Carta
           </button>
         )}
       </div>

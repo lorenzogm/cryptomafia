@@ -10,9 +10,9 @@ export const CARDS: Record<string, Card> = {
     rarity: 'common',
     cost: 10,
     basePoints: 30,
-    description: 'The sequel nobody asked for but everyone bought',
+    description: 'La secuela que nadie pidió pero todos compraron',
     synergies: ['memecoin', 'influencer'],
-    effect: '+5 points per Influencer card played this turn'
+    effect: '+5 puntos por carta Influencer jugada este turno'
   },
   
   'shiba_inu_2': {
@@ -22,7 +22,7 @@ export const CARDS: Record<string, Card> = {
     rarity: 'common',
     cost: 8,
     basePoints: 25,
-    description: 'Now with extra woof',
+    description: 'Ahora con ladrido extra',
     synergies: ['memecoin'],
   },
 
@@ -33,9 +33,9 @@ export const CARDS: Record<string, Card> = {
     rarity: 'uncommon',
     cost: 15,
     basePoints: 40,
-    description: 'Feels good man',
+    description: 'Se siente bien hermano',
     synergies: ['memecoin', 'influencer'],
-    effect: 'Double points if hand contains another memecoin'
+    effect: 'Puntos dobles si la mano contiene otra memecoin'
   },
 
   // DeFi tokens
@@ -46,45 +46,45 @@ export const CARDS: Record<string, Card> = {
     rarity: 'rare',
     cost: 30,
     basePoints: 60,
-    description: 'Decentralized exchange token with governance drama',
+    description: 'Token de intercambio descentralizado con drama de gobernanza',
     synergies: ['defi', 'trader'],
-    effect: '+10 points per DeFi card in hand'
+    effect: '+10 puntos por carta DeFi en la mano'
   },
 
   'compound_classic': {
     id: 'compound_classic',
-    name: 'COMP Classic',
+    name: 'COMP Clásico',
     type: 'token',
     rarity: 'uncommon',
     cost: 20,
     basePoints: 45,
-    description: 'Lending protocol that definitely won\'t get exploited',
+    description: 'Protocolo de préstamos que definitivamente no será explotado',
     synergies: ['defi'],
   },
 
   // NFT tokens
   'bored_apes_reborn': {
     id: 'bored_apes_reborn',
-    name: 'Bored Apes Reborn',
+    name: 'Simios Aburridos Renacidos',
     type: 'token',
     rarity: 'rare',
     cost: 50,
     basePoints: 80,
-    description: 'JPEGs with utility, trust me bro',
+    description: 'JPEGs con utilidad, confía en mí hermano',
     synergies: ['nft', 'influencer'],
-    effect: 'Gain 20 $CRYMP when played'
+    effect: 'Gana 20 $CRYMP cuando se juega'
   },
 
   'crypto_punks_2': {
     id: 'crypto_punks_2',
-    name: 'CryptoPunks 2.0',
+    name: 'CriptoPunks 2.0',
     type: 'token',
     rarity: 'legendary',
     cost: 100,
     basePoints: 150,
-    description: 'The original NFT collection, now with royalties',
+    description: 'La colección NFT original, ahora con regalías',
     synergies: ['nft'],
-    effect: 'Triple points if this is the only card played this turn'
+    effect: 'Puntos triples si esta es la única carta jugada este turno'
   },
 
   // Mining tokens
@@ -95,72 +95,72 @@ export const CARDS: Record<string, Card> = {
     rarity: 'common',
     cost: 12,
     basePoints: 35,
-    description: 'The real Bitcoin, according to Craig Wright',
+    description: 'El verdadero Bitcoin, según Craig Wright',
     synergies: ['mining'],
   },
 
   'ethereum_classic': {
     id: 'ethereum_classic',
-    name: 'Ethereum Classic',
+    name: 'Ethereum Clásico',
     type: 'token',
     rarity: 'uncommon',
     cost: 18,
     basePoints: 40,
-    description: 'Code is law, until it isn\'t',
+    description: 'El código es ley, hasta que no lo es',
     synergies: ['mining', 'dao'],
   },
 
   // Comodines (passive effects)
   'elon_simp': {
     id: 'elon_simp',
-    name: 'Elon Simp',
+    name: 'Simp de Elon',
     type: 'comodin',
     rarity: 'rare',
     cost: 25,
     basePoints: 0,
-    description: 'Worships every tweet from daddy Elon',
+    description: 'Adora cada tweet de papá Elon',
     synergies: ['influencer'],
-    effect: 'Double the effect of any memecoin',
+    effect: 'Duplica el efecto de cualquier memecoin',
     passive: true
   },
 
   'diamond_hands': {
     id: 'diamond_hands',
-    name: 'Diamond Hands 💎🙌',
+    name: 'Manos de Diamante 💎🙌',
     type: 'comodin',
     rarity: 'uncommon',
     cost: 20,
     basePoints: 0,
-    description: 'HODL to the moon!',
+    description: '¡HODL hasta la luna!',
     synergies: ['trader'],
-    effect: '+5 points per card in discard pile',
+    effect: '+5 puntos por carta en el descarte',
     passive: true
   },
 
   'pump_and_dump': {
     id: 'pump_and_dump',
-    name: 'Pump & Dump Scheme',
+    name: 'Esquema Pump & Dump',
     type: 'comodin',
     rarity: 'rare',
     cost: 35,
     basePoints: 0,
-    description: 'Classic market manipulation',
+    description: 'Manipulación clásica del mercado',
     synergies: ['trader', 'dao'],
-    effect: 'First card played each turn gets +50 points',
+    effect: 'La primera carta jugada cada turno obtiene +50 puntos',
     passive: true
   },
 
   // Herramientas (tools/utilities)
   'metamask_wallet': {
     id: 'metamask_wallet',
-    name: 'MetaMask Wallet',
+    name: 'Billetera MetaMask',
     type: 'herramienta',
     rarity: 'common',
     cost: 15,
     basePoints: 10,
-    description: 'Your gateway to getting rekt',
+    description: 'Tu portal para ser destrozado',
     synergies: ['defi'],
-    effect: 'Draw an extra card'
+    effect: 'Roba una carta extra'
   },
 
   'ledger_nano': {
@@ -170,9 +170,9 @@ export const CARDS: Record<string, Card> = {
     rarity: 'uncommon',
     cost: 25,
     basePoints: 20,
-    description: 'Cold storage for your cold heart',
+    description: 'Almacenamiento frío para tu corazón frío',
     synergies: [],
-    effect: 'Protect one card from Trampa effects'
+    effect: 'Protege una carta de efectos de Trampa'
   },
 
   'coingecko_premium': {
@@ -182,9 +182,9 @@ export const CARDS: Record<string, Card> = {
     rarity: 'uncommon',
     cost: 20,
     basePoints: 15,
-    description: 'See your portfolio crash in real-time',
+    description: 'Ve tu portafolio colapsar en tiempo real',
     synergies: ['trader'],
-    effect: 'View top 3 cards of deck'
+    effect: 'Ver las 3 cartas superiores del mazo'
   },
 
   // Trampas (risk cards)
@@ -195,58 +195,58 @@ export const CARDS: Record<string, Card> = {
     rarity: 'common',
     cost: 5,
     basePoints: 100,
-    description: 'High risk, high reward... mostly risk',
+    description: 'Alto riesgo, alta recompensa... principalmente riesgo',
     synergies: ['dao'],
-    effect: 'Lose all $CRYMP if you have more than 50'
+    effect: 'Pierde todo $CRYMP si tienes más de 50'
   },
 
   'sec_investigation': {
     id: 'sec_investigation',
-    name: 'SEC Investigation',
+    name: 'Investigación SEC',
     type: 'trampa',
     rarity: 'uncommon',
     cost: 0,
     basePoints: 0,
-    description: 'The government wants to have a word',
+    description: 'El gobierno quiere hablar contigo',
     synergies: [],
-    effect: 'Discard random card from hand'
+    effect: 'Descarta carta aleatoria de la mano'
   },
 
   // Eventos (events that affect game state)
   'bull_market': {
     id: 'bull_market',
-    name: 'Bull Market',
+    name: 'Mercado Alcista',
     type: 'evento',
     rarity: 'rare',
     cost: 30,
     basePoints: 0,
-    description: 'Everything is going up!',
+    description: '¡Todo está subiendo!',
     synergies: [],
-    effect: 'All cards give +20 points this turn'
+    effect: 'Todas las cartas dan +20 puntos este turno'
   },
 
   'crypto_winter': {
     id: 'crypto_winter',
-    name: 'Crypto Winter',
+    name: 'Invierno Cripto',
     type: 'evento',
     rarity: 'uncommon',
     cost: 10,
     basePoints: 50,
-    description: 'The bears are coming',
+    description: 'Los osos están llegando',
     synergies: [],
-    effect: 'All players lose 10 $CRYMP'
+    effect: 'Todos los jugadores pierden 10 $CRYMP'
   },
 
   'twitter_hack': {
     id: 'twitter_hack',
-    name: 'Twitter Hack',
+    name: 'Hackeo de Twitter',
     type: 'evento',
     rarity: 'rare',
     cost: 25,
     basePoints: 75,
-    description: 'Send Bitcoin to this address...',
+    description: 'Envía Bitcoin a esta dirección...',
     synergies: ['influencer'],
-    effect: 'All Influencer cards give double points this turn'
+    effect: 'Todas las cartas Influencer dan puntos dobles este turno'
   },
 
   // Basic starter cards
@@ -257,7 +257,7 @@ export const CARDS: Record<string, Card> = {
     rarity: 'common',
     cost: 5,
     basePoints: 20,
-    description: 'The original cryptocurrency',
+    description: 'La criptomoneda original',
     synergies: ['mining'],
   },
 
@@ -268,7 +268,7 @@ export const CARDS: Record<string, Card> = {
     rarity: 'common',
     cost: 8,
     basePoints: 25,
-    description: 'World computer that costs $50 per transaction',
+    description: 'Computadora mundial que cuesta $50 por transacción',
     synergies: ['defi', 'nft'],
   },
 
@@ -279,7 +279,7 @@ export const CARDS: Record<string, Card> = {
     rarity: 'common',
     cost: 6,
     basePoints: 22,
-    description: 'Centralized finance masquerading as DeFi',
+    description: 'Finanzas centralizadas haciéndose pasar por DeFi',
     synergies: ['trader'],
   },
 
@@ -290,7 +290,7 @@ export const CARDS: Record<string, Card> = {
     rarity: 'common',
     cost: 4,
     basePoints: 18,
-    description: 'Peer-reviewed vaporware',
+    description: 'Vaporware revisado por pares',
     synergies: ['dao'],
   },
 
@@ -301,47 +301,47 @@ export const CARDS: Record<string, Card> = {
     rarity: 'uncommon',
     cost: 12,
     basePoints: 35,
-    description: 'Fast and cheap, when it\'s not down',
+    description: 'Rápido y barato, cuando no está caído',
     synergies: ['defi', 'nft'],
-    effect: 'Network goes down: lose this card (10% chance)'
+    effect: 'La red se cae: pierde esta carta (10% de probabilidad)'
   }
 };
 
 // Archetype definitions
 export const ARCHETYPES: Record<string, ArchetypeData> = {
   influencer: {
-    name: 'Crypto Influencer',
-    description: 'Pump coins with your massive Twitter following',
+    name: 'Influencer Cripto',
+    description: 'Infla monedas con tu masivo seguimiento de Twitter',
     startingDeck: [
       'doge2', 'pepe_coin', 'bitcoin_btc', 'ethereum_eth', 'shiba_inu_2',
       'elon_simp', 'twitter_hack', 'metamask_wallet', 'coingecko_premium',
       'bored_apes_reborn'
     ],
     startingCrymp: 100,
-    specialEffect: 'Memecoin and Influencer cards give +10 bonus points'
+    specialEffect: 'Las cartas Memecoin e Influencer dan +10 puntos bonus'
   },
 
   trader: {
-    name: 'DeFi Trader',
-    description: 'Manipulate markets like a pro',
+    name: 'Trader DeFi',
+    description: 'Manipula mercados como un profesional',
     startingDeck: [
       'uni_v5', 'compound_classic', 'bitcoin_btc', 'ethereum_eth', 'binance_bnb',
       'diamond_hands', 'pump_and_dump', 'metamask_wallet', 'ledger_nano',
       'coingecko_premium'
     ],
     startingCrymp: 150,
-    specialEffect: 'DeFi and Trader cards give +15 bonus points'
+    specialEffect: 'Las cartas DeFi y Trader dan +15 puntos bonus'
   },
 
   dao_scammer: {
-    name: 'DAO Scammer',
-    description: 'Create elaborate schemes to separate fools from their money',
+    name: 'Estafador DAO',
+    description: 'Crea esquemas elaborados para separar a los tontos de su dinero',
     startingDeck: [
       'ethereum_classic', 'cardano_ada', 'rugpull', 'sec_investigation', 'bitcoin_btc',
       'pump_and_dump', 'crypto_winter', 'metamask_wallet', 'compound_classic',
       'ethereum_eth'
     ],
     startingCrymp: 80,
-    specialEffect: 'DAO cards give +20 bonus points, Trampa cards cost 50% less'
+    specialEffect: 'Las cartas DAO dan +20 puntos bonus, las cartas Trampa cuestan 50% menos'
   }
 };
