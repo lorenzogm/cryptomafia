@@ -56,28 +56,28 @@ export const Shop: React.FC<ShopProps> = ({
   return (
     <div className="game-container">
       <div className="game-header">
-        <div className="game-title">🛒 CRYPTO SHOP</div>
+        <div className="game-title">🛒 TIENDA CRIPTO</div>
         
         <div className="game-stats">
           <div className="stat">
             <span className="stat-value crymp-money">${gameState.crympMoney}</span>
-            <span className="stat-label">CRYMP Available</span>
+            <span className="stat-label">CRYMP Disponible</span>
           </div>
           
           <div className="stat">
             <span className="stat-value">{gameState.deck.length}</span>
-            <span className="stat-label">Cards in Deck</span>
+            <span className="stat-label">Cartas en el Mazo</span>
           </div>
         </div>
       </div>
 
       <div className="play-area">
         <h2 style={{ textAlign: 'center', color: '#ffd700', marginBottom: '30px' }}>
-          Welcome to the Crypto Marketplace
+          Bienvenido al Mercado Cripto
         </h2>
         
         <p style={{ textAlign: 'center', marginBottom: '30px', opacity: 0.8 }}>
-          Buy cards to improve your deck. Choose wisely - synergies are key to success!
+          Compra cartas para mejorar tu mazo. ¡Elige sabiamente - las sinergias son clave para el éxito!
         </p>
 
         <div className="hand" style={{ minHeight: '300px', justifyContent: 'center' }}>
@@ -98,14 +98,14 @@ export const Shop: React.FC<ShopProps> = ({
             onClick={handleRefreshShop}
             disabled={gameState.crympMoney < refreshCost}
           >
-            Refresh Shop (${refreshCost} CRYMP)
+            Actualizar Tienda (${refreshCost} CRYMP)
           </button>
           
           <button 
             className="btn btn-success"
             onClick={onReturnToPlay}
           >
-            Return to Game
+            Volver al Juego
           </button>
         </div>
 
@@ -116,12 +116,12 @@ export const Shop: React.FC<ShopProps> = ({
           background: 'rgba(0, 0, 0, 0.2)',
           borderRadius: '8px'
         }}>
-          <h3 style={{ color: '#ffd700', marginBottom: '10px' }}>💡 Pro Tips</h3>
+          <h3 style={{ color: '#ffd700', marginBottom: '10px' }}>💡 Consejos Pro</h3>
           <p style={{ fontSize: '14px', opacity: 0.9 }}>
-            • Look for cards that synergize with your existing deck<br/>
-            • Comodines provide powerful passive effects<br/>
-            • Higher rarity cards have stronger effects but cost more<br/>
-            • Balance your deck between points generation and special effects
+            • Busca cartas que sinergicen con tu mazo existente<br/>
+            • Los Comodines proporcionan efectos pasivos poderosos<br/>
+            • Las cartas de mayor rareza tienen efectos más fuertes pero cuestan más<br/>
+            • Equilibra tu mazo entre generación de puntos y efectos especiales
           </p>
         </div>
       </div>

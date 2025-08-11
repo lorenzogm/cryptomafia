@@ -46,10 +46,10 @@ function App() {
         padding: '20px'
       }}>
         <h1 style={{ fontSize: '48px', color: '#ffd700', marginBottom: '20px' }}>
-          Game Over
+          Fin del Juego
         </h1>
         <p style={{ fontSize: '18px', marginBottom: '30px', opacity: 0.9 }}>
-          Your crypto empire has fallen, but every failure is a learning opportunity!
+          Tu imperio cripto ha caído, ¡pero cada fracaso es una oportunidad de aprendizaje!
         </p>
         <button
           onClick={handleReturnToMenu}
@@ -66,7 +66,7 @@ function App() {
             letterSpacing: '1px'
           }}
         >
-          Return to Menu
+          Volver al Menú
         </button>
       </div>
     );

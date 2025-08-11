@@ -108,7 +108,7 @@
 }
 
 .played-cards.empty::after {
-  content: 'Play cards here to earn CW3 points';
+  content: 'Juega cartas aquí para ganar puntos CW3';
   color: rgba(255, 255, 255, 0.5);
   font-style: italic;
   display: flex;
